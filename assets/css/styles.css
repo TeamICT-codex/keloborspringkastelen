@@ -317,6 +317,8 @@ a.card__media, a.card__media:hover { text-decoration: none; }
 .usp:hover { transform: translateY(-3px); box-shadow: var(--sh-2); }
 .usp__icon { width: 54px; height: 54px; border-radius: 16px; display: grid; place-items: center; margin-bottom: .9rem; background: var(--sky-050); color: var(--sky-ink); }
 .usp__icon svg { width: 28px; height: 28px; }
+.usp__icon .usp-emoji { font-size: 28px; line-height: 1; }
+.usp:hover .usp-emoji { display: inline-block; transform: scale(1.12) rotate(-4deg); transition: transform .25s ease; }
 .usp h3 { font-size: 1.2rem; margin-bottom: .35rem; }
 .usp p { font-size: .96rem; }
 .usp:nth-child(2) .usp__icon { background: var(--mint-050); color: var(--mint); }
