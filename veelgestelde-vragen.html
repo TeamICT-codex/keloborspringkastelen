@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veelgestelde vragen over springkastelen huren | Kelobor</title>
+  <meta name="description" content="Antwoorden op de meest gestelde vragen over springkastelen huren: levering, plaatsing, slecht weer, stroom, ruimte, veiligheid, waarborg en betaling. Kelobor Springkastelen.">
+  <link rel="canonical" href="https://www.keloborspringkastelen.be/veelgestelde-vragen.html">
+  <link rel="icon" href="assets/img/logo.jpg">
+  <meta name="theme-color" content="#1B9DE0">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_BE">
+  <meta property="og:title" content="Veelgestelde vragen over springkastelen huren | Kelobor">
+  <meta property="og:description" content="Levering, plaatsing, slecht weer, stroom, ruimte, veiligheid, waarborg en betaling — alles op een rij.">
+  <meta property="og:image" content="https://www.keloborspringkastelen.be/assets/img/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="faq">
+  <div data-site-header></div>
+  <main id="main">
+    <div class="container"><nav class="breadcrumb"><a href="index.html">Home</a> › <span>Veelgestelde vragen</span></nav></div>
+
+    <section class="page-head">
+      <div class="container container--narrow">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">FAQ</span>
+          <h1>Veelgestelde vragen</h1>
+          <p class="lead">Alles wat je wil weten voordat je een springkasteel huurt. Staat je vraag er niet bij? <a href="contact.html">Contacteer ons gerust.</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:1rem">
+      <div class="container container--narrow">
+        <div class="faq" data-faq></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container container--narrow">
+        <div class="cta-band">
+          <h2>Nog een vraag?</h2>
+          <p>We helpen je graag persoonlijk verder — bel, WhatsApp of mail ons.</p>
+          <div class="hero__cta">
+            <a class="btn btn--cta btn--lg" href="offerte.html">Vraag beschikbaarheid aan</a>
+            <a class="btn btn--white btn--lg" href="tel:+32492070251">Bel 0492 07 02 51</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" data-site-footer></footer>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/catalog.js"></script>
+  <script>
+    (function () {
+      var host = document.querySelector("[data-faq]"); if (!host || !window.KELOBOR) return;
+      var chev = '<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg></span>';
+      host.innerHTML = window.KELOBOR.FAQ.map(function (f) {
+        return '<details class="faq__item"><summary class="faq__q">' + f.q + chev + '</summary><div class="faq__a"><p>' + f.a + "</p></div></details>";
+      }).join("");
+      var ld = { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": window.KELOBOR.FAQ.map(function (f) {
+        return { "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } };
+      }) };
+      var s = document.createElement("script"); s.type = "application/ld+json"; s.textContent = JSON.stringify(ld); document.head.appendChild(s);
+    })();
+  </script>
+</body>
+</html>

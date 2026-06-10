@@ -1,0 +1,13 @@
+{
+  "name": "Kelobor Springkastelen",
+  "short_name": "Kelobor",
+  "description": "Springkastelen, hindernisbanen en feestmateriaal huren in Lebbeke, Buggenhout en omstreken.",
+  "lang": "nl-BE",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F2F8FD",
+  "theme_color": "#1B9DE0",
+  "icons": [
+    { "src": "assets/img/logo.jpg", "sizes": "640x640", "type": "image/jpeg" }
+  ]
+}
